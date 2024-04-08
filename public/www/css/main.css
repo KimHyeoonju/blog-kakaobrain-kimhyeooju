@@ -1,0 +1,80 @@
+.main {
+}
+
+.main .inner {
+  height: auto;
+}
+
+.main-top {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 30px;
+}
+
+.main-top-slide {
+  /* 770/1170 * 100 = 65.8119658 */
+  width: 65.81%;
+  max-width: 770px;
+
+  /* 세로로 비율을 만들어 낼 때 "너비가 기준" */
+  /* 470/1170 * 100 = 40.1709402 */
+  height: 40.17vw;
+  max-height: 470px;
+
+  overflow: hidden;
+}
+
+.main-top-slide a {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  background: url("../images/b1.png") no-repeat center;
+  background-size: cover;
+}
+
+.main-top-banner {
+  /* 370/1170 * 100 = 31.6239316 */
+  width: 31.62%;
+  max-width: 370px;
+
+  /* 세로로 비율을 만들어 낼 때 "너비가 기준" */
+  /* 470/1170 * 100 = 40.1709402 */
+  height: 40.17vw;
+  max-height: 470px;
+
+  overflow: hidden;
+}
+
+.main-top-banner a {
+  /* a 태그는 기본이 display: inline; 이라서 잘 작동해도 속성을 바꿔주자. */
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  background: url("../images/br.png") no-repeat center;
+  background-size: cover;
+}
+
+.main-top-banner a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 반응형 */
+@media all and (max-width: 1024px) {
+  .main-top-slide {
+    width: 100%;
+    max-width: 100%;
+
+    height: 100vw;
+    max-height: 1240px;
+  }
+  .main-top-banner {
+    display: none;
+  }
+}
+.main-bottom {
+}

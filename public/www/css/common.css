@@ -20,5 +20,9 @@ body {
   font-style: normal;
 }
 
+.br-20 {
+  border-radius: 20px;
+}
+
 .wrap {
 }
