@@ -58,11 +58,6 @@
   background-size: cover;
 }
 
-.main-top-banner a img {
-  width: 100%;
-  height: 100%;
-}
-
 /* 반응형 */
 @media all and (max-width: 1024px) {
   .main-top-slide {
