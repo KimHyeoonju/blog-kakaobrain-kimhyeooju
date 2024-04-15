@@ -11,8 +11,8 @@
 }
 
 a {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 html {
@@ -21,9 +21,9 @@ html {
 
 body {
   font-family: "Inter", "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
+  font-optical-sizing: auto;
 }
 
 .br-20 {
@@ -31,23 +31,23 @@ body {
 }
 
 .bt-wrap {
-  display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  display: flex;
   gap: 3px;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 60px;
 }
 
 .bt-more {
   display: block;
+  padding: 11px 20px;
   border: 1px solid #000000;
-  border-radius: 20px;
   font-size: 14px;
   font-weight: 700;
-  padding: 11px 20px;
   line-height: 20px;
   transition: all 0.1s;
+  border-radius: 20px;
 }
 
 .bt-more:hover {
