@@ -1,36 +1,54 @@
 .main {
 }
-
 .main .inner {
   display: block;
   height: auto;
 }
-
 .main-top {
-  width: 100%;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin-top: 30px;
 }
-
 .main-top-slide {
-  /* 770/1170 * 100 = 65.8119658 */
   width: 65.81%;
   max-width: 770px;
 
-  /* 세로로 비율을 만들어 낼 때 "너비가 기준" */
-  /* 470/1170 * 100 = 40.1709402 */
   height: 40.17vw;
   max-height: 470px;
 
   overflow: hidden;
 }
 
+.topslide {
+  width: 100%;
+  height: 100%;
+}
+
+.topslide .swiper-pagination {
+  bottom: 30px !important;
+}
+
+.topslide .swiper-pagination-bullet {
+  width: 4px !important;
+  height: 4px !important;
+  background: #ffffff !important;
+  opacity: 0.7 !important;
+  border-radius: 4px !important;
+  transform: width 0.3s;
+  margin: 0 2px !important;
+}
+
+.topslide .swiper-pagination-bullet-active {
+  background: #ffffff !important;
+  opacity: 1 !important;
+  width: 20px !important;
+}
+
 .main-top-slide a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-
   padding: 40px;
 
   width: 100%;
@@ -39,39 +57,58 @@
   background-size: cover;
 }
 
-.slide-title {
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: 700;
-  text-align: right;
-}
-
 .main-top-banner {
-  /* 370/1170 * 100 = 31.6239316 */
   width: 31.62%;
   max-width: 370px;
 
-  /* 세로로 비율을 만들어 낼 때 "너비가 기준" */
-  /* 470/1170 * 100 = 40.1709402 */
   height: 40.17vw;
   max-height: 470px;
 
   overflow: hidden;
 }
 
+.bannerslide {
+  width: 100%;
+  height: 100%;
+}
+
+.bannerslide .swiper-pagination {
+  bottom: 30px !important;
+}
+
+.bannerslide .swiper-pagination-bullet {
+  width: 4px !important;
+  height: 4px !important;
+  background: #ffffff !important;
+  opacity: 0.7 !important;
+  border-radius: 4px !important;
+  transform: width 0.3s;
+  margin: 0 2px !important;
+}
+
+.bannerslide .swiper-pagination-bullet-active {
+  background: #ffffff !important;
+  opacity: 1 !important;
+  width: 20px !important;
+}
+
 .main-top-banner a {
-  /* a 태그는 기본이 display: inline; 이라서 잘 작동해도 속성을 바꿔주자. */
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-
   padding: 40px;
 
   width: 100%;
   height: 100%;
-
   background: url("../images/br.png") no-repeat center;
   background-size: cover;
+}
+
+.slide-title {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: right;
 }
 
 /* 반응형 */
@@ -83,6 +120,7 @@
     height: 100vw;
     max-height: 1240px;
   }
+
   .main-top-banner {
     display: none;
   }
@@ -91,23 +129,19 @@
 .main-bottom {
   display: flex;
   justify-content: space-between;
-
   width: 100%;
   margin-top: 60px;
 }
-
 .main-bottom h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   margin-bottom: 30px;
 }
 
 .list-wrap {
   display: flex;
   justify-content: space-between;
-
-  /* 자리 없으면 줄바꿈 */
   flex-wrap: wrap;
 
   gap: 2.56%;
@@ -123,18 +157,14 @@
 
 .list-box:hover .list-box-img {
   transform: translateY(-10px);
-
   filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.2));
 }
 
 .list-box-img {
   width: 100%;
-
   height: 17.09vw;
   max-height: 200px;
-
   overflow: hidden;
-
   margin-bottom: 24px;
 
   transition: all 0.2s ease-in;
@@ -146,38 +176,36 @@
   gap: 4px;
   margin-bottom: 18px;
 }
-
 .list-box-cate img {
   width: 24px;
   height: 24px;
 }
 .list-box-cate span {
-  /* display: inline; */
   font-size: 14px;
   font-weight: 700;
   color: #e700a7;
 }
+
 .list-box-title {
   font-weight: 700;
   font-size: 20px;
-  color: #000;
+  color: #000000;
   margin-bottom: 20px;
   word-break: keep-all;
   line-height: 28px;
 }
+
 .list-box-day {
   font-size: 14px;
-  color: #ccc;
+  color: #cccccc;
 }
 
 .main-bottom-list {
   width: 71.79%;
   max-width: 840px;
 }
-
 .main-bottom-list-news {
 }
-
 .main-bottom-list-banner {
   overflow: hidden;
   margin-bottom: 60px;
@@ -190,7 +218,6 @@
   background: #031efb url("../images/1pc.png") no-repeat center;
   background-size: 100%;
 }
-
 .main-bottom-list-picks {
 }
 
@@ -199,16 +226,13 @@
   .main-bottom {
     flex-wrap: wrap;
   }
-
   .main-bottom-list {
     width: 100%;
     max-width: 100%;
   }
-
   .list-box {
     width: 100%;
   }
-
   .list-box-img {
     height: 74.21vw;
     max-height: 760px;
@@ -228,7 +252,6 @@
 .card-link {
   display: flex;
   align-items: flex-end;
-
   width: 100%;
   height: 330px;
   background: url("../images/p1.png") no-repeat center;
@@ -240,21 +263,17 @@
   /* 배치된 내용의 좌표(x, y) 가 이동한다. */
   transition: all 0.2s ease-in;
 }
-
 .card-link:hover {
   transform: translateY(-10px);
-
   filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.2));
 }
 
 .card-txt {
   display: flex;
   align-items: center;
-
   width: 100%;
   height: 70px;
   padding: 20px;
-
   background: rgba(0, 0, 0, 0.5);
 }
 .card-title {
@@ -263,15 +282,14 @@
   font-weight: 700;
 }
 .card-count {
-  display: inline;
+  display: block;
   color: #ffffff;
   font-size: 10px;
   font-weight: 700;
-
   padding: 5px 10px;
-  margin-left: 3px;
-  border-radius: 10px;
   background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-left: 3px;
 }
 
 /* 반응형 */

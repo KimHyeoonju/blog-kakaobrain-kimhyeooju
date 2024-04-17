@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-
     <!-- Swiper -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- 외부 js 방식으로 진행 -->
+    <!-- 외부 js 파일 방식 으로 진행 -->
     <script src="./js/logo.js"></script>
+    <script src="./js/topslide.js"></script>
+    <script src="./js/bannerslide.js"></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -32,8 +32,8 @@
         <div class="inner">
           <!-- 상단 로고 -->
           <div class="header-logo">
-            <a href="index.html" class="header-logo-link"
-              ><img
+            <a href="index.html" class="header-logo-link">
+              <img
                 src="./images/etc/logo-kakao.png"
                 alt="카카오브레인 블로그"
                 class="header-logo-img"
@@ -109,40 +109,65 @@
               <li><a href="#">소식</a></li>
               <li><a href="#">팀&크루</a></li>
               <li><a href="#">영입</a></li>
-              <li class="navi-serch">
-                <a href="#"> </a>
+              <li class="navi-search">
+                <a href="#"></a>
               </li>
               <li class="mobile-menu">
-                <a href="#"> </a>
+                <a href="#"></a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-
       <!-- 메인 레이아웃 -->
       <main class="main">
-        <div class="inner main">
+        <div class="inner">
           <!-- 메인 상단 -->
           <div class="main-top">
             <!-- 슬라이드 -->
             <div class="main-top-slide br-20">
-              <a href="#">
-                <p class="slide-title">
-                  카카오브레인의 <br />
-                  연구문화
-                </p>
-              </a>
+              <!-- Start 상단 슬라이드 -->
+              <div class="swiper topslide">
+                <div class="swiper-wrapper">
+                  <!-- 외부 데이터 연동 -->
+                  <!-- <div class="swiper-slide">
+                    <a href="#">
+                      <p class="slide-title">
+                        카카오브레인의<br />
+                        연구문화
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <p class="slide-title">
+                        카카오브레인의<br />
+                        연구문화
+                      </p>
+                    </a>
+                  </div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- End 상단 슬라이드 -->
             </div>
-
-            <!-- 타이틀 배너 슬라이드-->
+            <!-- 타이틀 배너 슬라이드 -->
             <div class="main-top-banner br-20">
-              <a href="#">
-                <p class="slide-title">영입 중</p>
-              </a>
+              <!-- Start 타이틀 배너 -->
+              <div class="swiper bannerslide">
+                <!-- 외부 데이터 연동 -->
+                <div class="swiper-wrapper">
+                  <!-- <div class="swiper-slide">
+                    <a href="#">
+                      <p class="slide-title">영입 중</p>
+                    </a>
+                  </div> -->
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- End 타이틀 배너 -->
             </div>
           </div>
-
           <!-- 메인 하단 -->
           <div class="main-bottom">
             <!-- 메인 리스트 영역 -->
@@ -188,13 +213,7 @@
                   </a>
 
                   <a href="#" class="list-box">
-                    <div
-                      class="list-box-img br-20"
-                      style="
-                        background: url('./images/c3.png') no-repeat center;
-                        background-size: cover;
-                      "
-                    ></div>
+                    <div class="list-box-img br-20"></div>
                     <div class="list-box-cate">
                       <img src="./images/icon/ic_krew.png" alt="카카오브레인" />
                       <span>Krew</span>
@@ -206,15 +225,13 @@
                   </a>
                 </div>
               </div>
-
               <!-- 배너 -->
               <div class="main-bottom-list-banner br-20">
-                <a href="" class="list-banner-link"></a>
+                <a href="#" class="list-banner-link"></a>
               </div>
-
               <!-- 추천글 리스트 -->
               <div class="main-bottom-list-picks">
-                <h2>Editor’s Pick 🏃🏻‍♀🏃‍♂🏃🏽</h2>
+                <h2>Editor’s Pick 🏃🏻‍♀️🏃‍♂️🏃🏽</h2>
                 <div class="list-wrap">
                   <a href="#" class="list-box">
                     <div
@@ -233,7 +250,6 @@
                     </p>
                     <span class="list-box-day">2024.02.08</span>
                   </a>
-
                   <a href="#" class="list-box">
                     <div
                       class="list-box-img br-20"
@@ -251,7 +267,6 @@
                     </p>
                     <span class="list-box-day">2024.02.08</span>
                   </a>
-
                   <a href="#" class="list-box">
                     <div
                       class="list-box-img br-20"
@@ -269,7 +284,6 @@
                     </p>
                     <span class="list-box-day">2024.02.08</span>
                   </a>
-
                   <a href="#" class="list-box">
                     <div
                       class="list-box-img br-20"
@@ -287,7 +301,6 @@
                     </p>
                     <span class="list-box-day">2024.02.08</span>
                   </a>
-
                   <a href="#" class="list-box">
                     <div
                       class="list-box-img br-20"
@@ -305,7 +318,6 @@
                     </p>
                     <span class="list-box-day">2024.02.08</span>
                   </a>
-
                   <a href="#" class="list-box">
                     <div
                       class="list-box-img br-20"
@@ -351,10 +363,9 @@
           </div>
         </div>
       </main>
-
       <!-- 하단 레이아웃 -->
       <footer class="footer">
-        <!-- 하단 사이트 정보 및 사이트 맵  -->
+        <!-- 하단 사이트 정보 및 사이트 맵 -->
         <div class="footer-top">
           <div class="inner">
             <!-- 회사소개 -->
@@ -368,7 +379,7 @@
               <p class="footer-top-info-desc">
                 카카오브레인의 혁신은 모든 크루의 물음에서 시작합니다. <br />
                 AI 없이는 상상할 수 없는 세상을 만들기 위해선 생각하지 못한 많은
-                물음이 필요합니다. <br />
+                물음이 필요합니다.<br />
                 세상을 변화시킬 수 있는 새로운 물음을 던질 크루를 기다립니다.
               </p>
               <a href="#" class="bt-more bt-orange">지원하러 가기</a>
@@ -384,6 +395,7 @@
                 <dd><a href="#">개인정보처리방침</a></dd>
                 <dd><a href="#">오시는 길</a></dd>
               </dl>
+
               <dl>
                 <dt>문의</dt>
                 <dd><a href="#">영입</a></dd>
@@ -393,7 +405,6 @@
             </div>
           </div>
         </div>
-
         <!-- 하단 카피라이터 및 SNS 링크 -->
         <div class="footer-bottom">
           <div class="inner">

@@ -9,14 +9,12 @@
 }
 .footer-top-info {
 }
-
 .footer-logo {
   display: block;
   width: 121px;
   height: 20px;
   margin-bottom: 30px;
 }
-
 .footer-logo img {
   width: 100%;
   height: auto;
@@ -31,8 +29,6 @@
 }
 
 .bt-orange {
-  /* 인터넷 오류 등으로 폰트가 변경 되었을 때 width 를 지정해주면 달라진 폰트 때문에 깨질 수 있으므로 */
-  /*   display: inline-block; 사용을 추천 */
   display: inline-block;
   border: 1px solid #fec62c !important;
   background: #fec62c !important;
@@ -68,11 +64,9 @@
 }
 
 .footer-top-sitemap dl dd a:hover {
-  /* display : block이면 공백도 밑줄이 쳐진다. display: inline-block; 로 설정해줘야한다. */
   text-decoration: underline;
 }
 
-/* 화살표 회전 */
 .rot-45 {
   transform: rotate(45deg);
 }
@@ -85,40 +79,34 @@
     width: 100%;
     margin-bottom: 30px;
   }
-
   .footer-top-sitemap {
     width: 100%;
   }
 }
+
 .footer-bottom {
   background: #191919;
   padding: 30px 0;
 }
 .footer-bottom-copyright {
 }
-
 .copy {
   color: #666666;
   font-size: 14px;
 }
-
 .footer-bottom-sns {
 }
-
 .sns-list {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 .sns-list li {
 }
-
 .sns-list li a {
-  font-size: 24px;
   color: #807f80;
+  font-size: 24px;
 }
-
 .sns-list li a:hover {
   color: #cccccc;
 }
