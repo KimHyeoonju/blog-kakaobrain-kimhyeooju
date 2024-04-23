@@ -204,8 +204,10 @@
   width: 71.79%;
   max-width: 840px;
 }
+
 .main-bottom-list-news {
 }
+
 .main-bottom-list-banner {
   overflow: hidden;
   margin-bottom: 60px;
@@ -219,6 +221,16 @@
   background-size: 100%;
 }
 .main-bottom-list-picks {
+}
+
+.cardslide {
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
+}
+
+.cardslide .swiper-wrapper {
+  display: block;
 }
 
 /* 반응형 */
@@ -236,11 +248,6 @@
   .list-box-img {
     height: 74.21vw;
     max-height: 760px;
-  }
-
-  .main-bottom-cards {
-    width: 100%;
-    max-width: 100%;
   }
 }
 
@@ -295,12 +302,16 @@
 /* 반응형 */
 @media all and (max-width: 1024px) {
   .main-bottom-cards {
-    width: 100%;
-    max-width: 100%;
+    width: 1024px;
+    max-width: 1024px;
   }
 
   .card-link {
     width: 240px;
     height: 266px;
+  }
+
+  .cardslide .swiper-wrapper {
+    display: flex;
   }
 }
