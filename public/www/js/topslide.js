@@ -48,6 +48,15 @@ window.addEventListener("load", function () {
           clickable: true,
         },
       });
+
+      // 4. 마우스 들어왔는지 확인
+      const slideArea = document.querySelector(".topslide");
+      slideArea.addEventListener("mouseenter", function () {
+        console.log("마우스 올렸어요.");
+      });
+      slideArea.addEventListener("mouseleave", function () {
+        console.log("마우스 빠졌어요.");
+      });
     })
     .catch((error) => {
       console.log(error);
