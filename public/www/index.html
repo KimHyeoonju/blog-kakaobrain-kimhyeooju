@@ -10,7 +10,9 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
+
     <link rel="stylesheet" href="./css/popup.css" />
+
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/maintop.css" />
@@ -24,22 +26,24 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 외부 js 파일 방식 으로 진행 -->
     <script src="./js/popup.js"></script>
+
     <script src="./js/header.js"></script>
     <script src="./js/logo.js"></script>
     <script src="./js/topslide.js"></script>
     <script src="./js/bannerslide.js"></script>
     <script src="./js/news.js"></script>
     <script src="./js/crew.js"></script>
+    <script src="./js/cards.js"></script>
   </head>
   <body>
     <!-- 저작권 안내 -->
     <div class="popup">
       <div class="popup-content">
         <p>
-          <strong>
-            해당 사이트는 스터디용으로 제작되었으며, 모든 리소스의 저작권은
-            원저작자에게 있습니다.
-          </strong>
+          <strong
+            >해당 사이트는 스터디용으로 제작되었으며, 모든 리소스의 저작권은
+            원저작자에게 있습니다.</strong
+          >
           <br />
           * 본 사이트는 Chrome 에 최적화되어 있습니다. <br />
           * 해당 사이트와 관련한 문제가 있으면 연락을 주시면 감사하겠습니다.
@@ -141,6 +145,18 @@
           </nav>
         </div>
       </header>
+
+      <!-- 모바일 메뉴 -->
+      <div class="mb-header-bg"></div>
+      <div class="mb-header-menu">
+        <div class="inner">
+          <ul class="mb-nav">
+            <li><a href="#">소식</a></li>
+            <li><a href="#">팀 & 크루</a></li>
+            <li><a href="#">영입</a></li>
+          </ul>
+        </div>
+      </div>
       <!-- 메인 레이아웃 -->
       <main class="main">
         <div class="inner">
@@ -177,8 +193,8 @@
             <div class="main-top-banner br-20">
               <!-- Start 타이틀 배너 -->
               <div class="swiper bannerslide">
-                <!-- 외부 데이터 연동 -->
                 <div class="swiper-wrapper">
+                  <!-- 외부 데이터 연동 -->
                   <!-- <div class="swiper-slide">
                     <a href="#">
                       <p class="slide-title">영입 중</p>
@@ -199,36 +215,6 @@
                 <h2>NEW. 따끈따끈 새로 나온 글 🔥</h2>
                 <div class="list-wrap" id="news">
                   <!-- 데이터 연동 -->
-
-                  <a href="#" class="list-box">
-                    <div
-                      class="list-box-img br-20"
-                      style="
-                        background: url('./images/c2.png') no-repeat center;
-                        background-size: cover;
-                      "
-                    ></div>
-                    <div class="list-box-cate">
-                      <img src="./images/icon/ic_krew.png" alt="카카오브레인" />
-                      <span>Krew</span>
-                    </div>
-                    <p class="list-box-title">
-                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
-                    </p>
-                    <span class="list-box-day">2024.02.08</span>
-                  </a>
-
-                  <a href="#" class="list-box">
-                    <div class="list-box-img br-20"></div>
-                    <div class="list-box-cate">
-                      <img src="./images/icon/ic_krew.png" alt="카카오브레인" />
-                      <span>Krew</span>
-                    </div>
-                    <p class="list-box-title">
-                      규칙 없는 게 규칙, 카카오브레인 미니컨을 소개합니다 🙌
-                    </p>
-                    <span class="list-box-day">2024.02.08</span>
-                  </a>
                 </div>
               </div>
               <!-- 배너 -->
@@ -239,9 +225,8 @@
               <div class="main-bottom-list-picks">
                 <h2>Editor’s Pick 🏃🏻‍♀️🏃‍♂️🏃🏽</h2>
                 <div class="list-wrap" id="crew">
-                  <!-- 데이터 연동 -->
+                  <!-- 외부 데이터 연동 -->
                 </div>
-
                 <div class="bt-wrap">
                   <a href="#" class="bt-more">더보기</a>
                 </div>
@@ -253,12 +238,12 @@
               <h2>폴더 📁</h2>
               <!-- 카드 슬라이드 -->
               <div class="main-bottom-cards-slide">
-                <a href="#" class="card-link br-20">
-                  <div class="card-txt">
-                    <h3 class="card-title">AI Healthcare</h3>
-                    <span class="card-count">10</span>
+                <!-- 외부데이터 연동 -->
+                <div class="swiper cardslide">
+                  <div class="swiper-wrapper">
+                    <!-- 슬라이드들을 배치 -->
                   </div>
-                </a>
+                </div>
               </div>
 
               <div class="bt-wrap">

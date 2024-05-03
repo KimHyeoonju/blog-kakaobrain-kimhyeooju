@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
 
     // for (let i = 0; i < _result.length; i++) {
     //   const obj = _result[i];
-    //   const tag = `<a href=${obj.link} class="list-box">
+    //   const tag = `<a href=${obj.link} sclass="list-box">
     //       <div class="list-box-img br-20" style="background: url('./images/${obj.imgpath}') no-repeat center; background-size: cover"></div>
     //       <div class="list-box-cate">
     //         <img src="./images/icon/${obj.icon}" alt="${obj.category}" />

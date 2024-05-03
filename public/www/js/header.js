@@ -75,7 +75,7 @@ window.addEventListener("load", function () {
 
     if (winWidth > 1024) {
       if (mbMenuOpen) {
-        mbBt.classList.remove("mobile-menu-open");
+        mbBt.classList.remove("mobile-menu-s");
         mbBg.classList.remove("mb-header-bg-show");
         mbMenu.classList.remove("mb-header-menu-show");
         mbMenuOpen = false;
