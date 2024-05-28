@@ -14,9 +14,12 @@ const SlideTopMain = () => {
   const whereTag = useRef(null);
   const slideArea = useRef(null);
   // 슬라이드 데이터 관리 (화면 갱신 반영)
-  const [list, setList] = useState([]);
+  // const [list, setList] = useState([]);
+  const [topSlideData, setTopSlideData] = useState([]);
+
   // swiper 로 만든 html 을 제어한다.
   const topSlide = useRef(null);
+
   // swiper 옵션
   const swiperOption = {
     loop: true,
@@ -26,6 +29,10 @@ const SlideTopMain = () => {
       disableOnInteraction: false,
     },
     pagination: true,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
     modules: [Autoplay, Pagination],
     onInit: swiper => {
       topSlide.current = swiper;
@@ -34,7 +41,7 @@ const SlideTopMain = () => {
 
   const getTopSlideCall = async () => {
     const result = await getTopSlide();
-    setList(result);
+    setTopSlideData(result);
     // const slideArea = document.querySelector(".topslide");
     slideArea.current.addEventListener("mouseenter", function () {
       topSlide.current.autoplay.stop();
@@ -52,11 +59,8 @@ const SlideTopMain = () => {
   return (
     <div className="main-top-slide br-20">
       <Swiper className="topslide" ref={slideArea} {...swiperOption}>
-        {/* 이유는 아래처럼 자동 코등 되니까.. */}
-        {/* <div className="swiper-wrapper"></div> */}
-
         {/* 아이템 배치 : 리액트 반복문은 kye 가 필요하다. */}
-        {list.map((item, index, arr) => (
+        {topSlideData.map((item, index, arr) => (
           <SwiperSlide key={index}>
             <SlideTopMainItem
               url={item.url}
