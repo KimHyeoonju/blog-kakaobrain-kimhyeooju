@@ -25,10 +25,7 @@ const SlideTopMain = () => {
       delay: 2500,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+    pagination: true,
     modules: [Autoplay, Pagination],
     onInit: swiper => {
       topSlide.current = swiper;
