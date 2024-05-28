@@ -35,7 +35,6 @@ window.addEventListener("load", function () {
       // 3. html 완성후 swiper 를 생성한다.
       // 기본코드를 넣어보자.
       const topSlide = new Swiper(".topslide", {
-        // 대소문자 주의!
         loop: true,
         speed: 800,
         autoplay: {
@@ -43,19 +42,18 @@ window.addEventListener("load", function () {
           disableOnInteraction: false,
         },
         pagination: {
-          // el : Element, html 대상
           el: ".swiper-pagination",
           clickable: true,
         },
       });
 
-      // 4. 마우스 들어왔는지 확인
+      // 4. 마우스 오버시 슬라이드를 일시 멈춤 및 재실행
       const slideArea = document.querySelector(".topslide");
       slideArea.addEventListener("mouseenter", function () {
-        console.log("마우스 올렸어요.");
+        topSlide.autoplay.stop();
       });
       slideArea.addEventListener("mouseleave", function () {
-        console.log("마우스 빠졌어요.");
+        topSlide.autoplay.start();
       });
     })
     .catch((error) => {

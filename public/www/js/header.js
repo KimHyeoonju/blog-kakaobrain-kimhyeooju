@@ -1,3 +1,4 @@
+// 상단 영역
 window.addEventListener("load", function () {
   // header 에 라인의 css 를 적용한다.
   const header = document.querySelector(".header");
@@ -34,8 +35,9 @@ window.addEventListener("load", function () {
   });
 });
 
+// 모바일 메뉴관련
 window.addEventListener("load", function () {
-  // 필요로 한 DOM 요소를 보관한다.
+  // 1. 필요로 한 DOM 요소를 보관한다.
   // 버튼
   const mbBt = document.querySelector(".mobile-menu a");
   // 배경
@@ -60,7 +62,7 @@ window.addEventListener("load", function () {
       mbMenu.classList.remove("mb-header-menu-show");
       mbMenuOpen = false;
     } else {
-      // 메뉴가 펼쳐져 있지 않을 때, 사용자가 클릭하면 메뉴를 펼침.
+      // 메뉴가 펼침이 아닌데 사용자가 클릭하면 메뉴를 펼침.
       mbBt.classList.add("mobile-menu-open");
       mbBg.classList.add("mb-header-bg-show");
       mbMenu.classList.add("mb-header-menu-show");
@@ -71,11 +73,11 @@ window.addEventListener("load", function () {
   // 반응형 코드
   window.addEventListener("resize", function () {
     // 브라우저의 너비를 알아낸다.
-    const winWidth = this.window.innerWidth;
+    const winWidth = window.innerWidth;
 
     if (winWidth > 1024) {
       if (mbMenuOpen) {
-        mbBt.classList.remove("mobile-menu-s");
+        mbBt.classList.remove("mobile-menu-open");
         mbBg.classList.remove("mb-header-bg-show");
         mbMenu.classList.remove("mb-header-menu-show");
         mbMenuOpen = false;

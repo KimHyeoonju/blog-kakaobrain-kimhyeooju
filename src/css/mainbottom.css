@@ -1,28 +1,28 @@
 .main-bottom {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin-top: 60px;
 }
 .main-bottom h2 {
+  margin-bottom: 30px;
   font-size: 24px;
   font-weight: 700;
   color: #000;
-  margin-bottom: 30px;
 }
 
 .list-wrap {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 
   gap: 2.56%;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 60px;
 }
 
 .list-box {
-  display: block;
   width: 30%;
+  display: block;
 
   margin-bottom: 30px;
 }
@@ -36,16 +36,16 @@
   width: 100%;
   height: 17.09vw;
   max-height: 200px;
-  overflow: hidden;
   margin-bottom: 24px;
+  overflow: hidden;
 
   transition: all 0.2s ease-in;
 }
 
 .list-box-cate {
   display: flex;
-  align-items: center;
   gap: 4px;
+  align-items: center;
   margin-bottom: 18px;
 }
 .list-box-cate img {
@@ -59,12 +59,12 @@
 }
 
 .list-box-title {
-  font-weight: 700;
-  font-size: 20px;
-  color: #000000;
   margin-bottom: 20px;
-  word-break: keep-all;
+  font-size: 20px;
+  font-weight: 700;
   line-height: 28px;
+  color: #000000;
+  word-break: keep-all;
 }
 
 .list-box-day {
@@ -76,31 +76,27 @@
   width: 71.79%;
   max-width: 840px;
 }
-
 .main-bottom-list-news {
 }
-
 .main-bottom-list-banner {
-  overflow: hidden;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .list-banner-link {
-  display: block;
   width: 100%;
   height: 160px;
+  display: block;
   background: #031efb url("../images/1pc.png") no-repeat center;
   background-size: 100%;
 }
 .main-bottom-list-picks {
 }
-
 .cardslide {
   width: 100%;
   height: 100%;
   overflow: visible !important;
 }
-
 .cardslide .swiper-wrapper {
   display: block;
 }
@@ -129,15 +125,15 @@
 }
 
 .card-link {
-  display: flex;
-  align-items: flex-end;
   width: 100%;
   height: 330px;
-  background: url("../images/p1.png") no-repeat center;
-  background-size: cover;
+  display: flex;
+  align-items: flex-end;
   margin-bottom: 30px;
 
   overflow: hidden;
+  background: url("../images/p1.png") no-repeat center;
+  background-size: cover;
 
   /* 배치된 내용의 좌표(x, y) 가 이동한다. */
   transition: all 0.2s ease-in;
@@ -148,27 +144,27 @@
 }
 
 .card-txt {
-  display: flex;
-  align-items: center;
   width: 100%;
   height: 70px;
+  display: flex;
+  align-items: center;
   padding: 20px;
   background: rgba(0, 0, 0, 0.5);
 }
 .card-title {
-  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
+  color: #ffffff;
 }
 .card-count {
   display: block;
-  color: #ffffff;
-  font-size: 10px;
-  font-weight: 700;
+  margin-left: 3px;
   padding: 5px 10px;
   background: rgba(255, 255, 255, 0.1);
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
   border-radius: 10px;
-  margin-left: 3px;
 }
 
 /* 반응형 */
@@ -182,7 +178,6 @@
     width: 240px;
     height: 266px;
   }
-
   .cardslide .swiper-wrapper {
     display: flex;
   }

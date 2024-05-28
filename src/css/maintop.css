@@ -1,7 +1,7 @@
 .main-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin-top: 30px;
 }
 .main-top-slide {
@@ -18,35 +18,31 @@
   width: 100%;
   height: 100%;
 }
-
 .topslide .swiper-pagination {
   bottom: 30px !important;
 }
-
 .topslide .swiper-pagination-bullet {
   width: 4px !important;
   height: 4px !important;
+  margin: 0 2px !important;
   background: #ffffff !important;
+  transition: width 0.3s;
   opacity: 0.7 !important;
   border-radius: 4px !important;
-  transform: width 0.3s;
-  margin: 0 2px !important;
 }
-
 .topslide .swiper-pagination-bullet-active {
+  width: 20px !important;
   background: #ffffff !important;
   opacity: 1 !important;
-  width: 20px !important;
 }
 
 .main-top-slide a {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 40px;
-
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px;
   background: url("../images/b1.png") no-repeat center;
   background-size: cover;
 }
@@ -60,7 +56,6 @@
 
   overflow: hidden;
 }
-
 .bannerslide {
   width: 100%;
   height: 100%;
@@ -69,39 +64,35 @@
 .bannerslide .swiper-pagination {
   bottom: 30px !important;
 }
-
 .bannerslide .swiper-pagination-bullet {
   width: 4px !important;
   height: 4px !important;
+  margin: 0 2px !important;
   background: #ffffff !important;
+  transition: width 0.3s;
   opacity: 0.7 !important;
   border-radius: 4px !important;
-  transform: width 0.3s;
-  margin: 0 2px !important;
 }
-
 .bannerslide .swiper-pagination-bullet-active {
+  width: 20px !important;
   background: #ffffff !important;
   opacity: 1 !important;
-  width: 20px !important;
 }
-
 .main-top-banner a {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 40px;
-
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px;
   background: url("../images/br.png") no-repeat center;
   background-size: cover;
 }
 
 .slide-title {
-  color: #ffffff;
   font-size: 40px;
   font-weight: 700;
+  color: #ffffff;
   text-align: right;
 }
 

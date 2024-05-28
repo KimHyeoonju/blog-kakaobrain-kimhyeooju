@@ -1,6 +1,6 @@
 .main {
 }
 .main .inner {
-  display: block;
   height: auto;
+  display: block;
 }

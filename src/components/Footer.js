@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/footer.css";
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -10,15 +9,11 @@ const Footer = () => {
           {/* <!-- 회사소개 --> */}
           <div className="footer-top-info">
             <a href="#" className="footer-logo">
-              <img
-                src="./images/etc/logo-kakao-footer.png"
-                alt="카카오브레인"
-              />
+              <img src="./images/etc/logo-kakao-footer.png" alt="카카오브레인" />
             </a>
             <p className="footer-top-info-desc">
               카카오브레인의 혁신은 모든 크루의 물음에서 시작합니다. <br />
-              AI 없이는 상상할 수 없는 세상을 만들기 위해선 생각하지 못한 많은
-              물음이 필요합니다.
+              AI 없이는 상상할 수 없는 세상을 만들기 위해선 생각하지 못한 많은 물음이 필요합니다.
               <br />
               세상을 변화시킬 수 있는 새로운 물음을 던질 크루를 기다립니다.
             </p>
@@ -66,9 +61,7 @@ const Footer = () => {
         <div className="inner">
           {/* <!-- 카피라이터 --> */}
           <div className="footer-bottom-copyright">
-            <span className="copy">
-              Kakao Brain Corp. @ All rights reserved.
-            </span>
+            <span className="copy">Kakao Brain Corp. @ All rights reserved.</span>
           </div>
           {/* <!-- SNS 목록 --> */}
           <div className="footer-bottom-sns">

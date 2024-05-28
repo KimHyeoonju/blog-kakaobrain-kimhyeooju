@@ -7,8 +7,8 @@ const Main = () => {
   return (
     <main className="main">
       <div className="inner">
-        <MainTop />
-        <MainBottom />
+        <MainTop></MainTop>
+        <MainBottom></MainBottom>
       </div>
     </main>
   );
