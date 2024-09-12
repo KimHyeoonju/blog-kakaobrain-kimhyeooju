@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://blog-kakaobrain-kimhyeooju.vercel.app
+
+# Sitemaps
+Sitemap: https://blog-kakaobrain-kimhyeooju.vercel.app/sitemap.xml
