@@ -1,6 +1,6 @@
 # 카카오브레인 블러그 클론 프로젝트
 <a href="https://kimhyeoonju.github.io/clone-wp/">
-  <img src="https://github.com/user-attachments/assets/97f86a88-31b7-44c5-8c21-98fef2532508">
+  <img src="https://github.com/user-attachments/assets/5c50914f-626a-4093-815c-9a9b9561e74c">
 </a>
 
 <div style="margin: 0 auto; text-align: center;" align="center" >
